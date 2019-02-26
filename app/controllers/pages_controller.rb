@@ -6,5 +6,6 @@ class PagesController < ApplicationController
 	end
 
 	def create
+		aaa
 	end
 end
