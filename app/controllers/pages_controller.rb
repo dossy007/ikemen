@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 	end
 
 	def show
+		@pages = Page.find(params[:id])
 	end
 
 	def create
