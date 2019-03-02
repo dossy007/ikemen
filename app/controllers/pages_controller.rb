@@ -8,4 +8,16 @@ class PagesController < ApplicationController
 
 	def create
 	end
+
+	def uno
+	end
+
+	def due
+	end
+
+	def tre
+	end
+
+	def quattro
+	end
 end
