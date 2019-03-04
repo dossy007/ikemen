@@ -2,6 +2,12 @@
 
 ここに画像を貼る
 
+<%= @pages.name %>
 
-new acitonを動かす。
 
+<%= form_tag('/choco',method: :post) do %>
+					<textarea placeholder="twitterのユーザー名" name="name" id="" cols="30" rows="10"></textarea>
+					<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
+				<p class="caution-txt">※変換される言葉</p>
+				<%= image_submit_tag 'btn.png',class: 'send' %>
+				<% end %>
