@@ -2,11 +2,11 @@ class PagesController < ApplicationController
 	def index
 	end
 
-	def show
-		@pages = Page.find(params[:id])
+	def create
 	end
 
-	def create
+	def show
+		@pages = Page.find(params[:id])
 	end
 
 	def uno
