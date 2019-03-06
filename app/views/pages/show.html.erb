@@ -1,13 +1,24 @@
 
 
 ここに画像を貼る
+<% if @pages.id == 2 %>
+   <%= image_tag 'danbo.png' %>
+	<% elsif @pages.id == 3 %>
+	<%= image_tag 'danbo2' %>
+	<% elsif @pages.id == 4 %>
+	<%= image_tag 'blackman' %>
+	<% end %>
 
-<%= @pages.name %>
-
-
-<%= form_tag('/choco',method: :post) do %>
-					<textarea placeholder="twitterのユーザー名" name="name" id="" cols="30" rows="10"></textarea>
-					<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
-				<p class="caution-txt">※変換される言葉</p>
-				<%= image_submit_tag 'btn.png',class: 'send' %>
-				<% end %>
+    <%= form_tag('/pages',method: :post) do %>
+		<textarea placeholder="twitterのユーザー名" name="name" id="" cols="30" rows="10"></textarea>
+		<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
+	<p class="caution-txt">※変換される言葉</p>
+	<input type="submit" value="SENT">
+	<% end %>
+<!-- 条件分岐で画像の表示を変更することも可能なのではないか！！！！！ -->
+<!--
+if show/id == 3
+ img3
+ elsif show == 4
+ img4
+ end みたいな -->
