@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_04_121111) do
+ActiveRecord::Schema.define(version: 2019_02_26_024057) do
 
   create_table "pages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
+    t.text "text"
+    t.integer "params_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "image"
+  end
+
+  create_table "tes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
