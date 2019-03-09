@@ -1,0 +1,22 @@
+create したよ。
+
+ここで、twitter投稿。
+<%= @page.text %>
+<%= @page.params_id %>
+
+<% if @page.params_id == 2 %>
+    <%= image_tag 'danbo.png' %>
+	<% elsif @page.params_id == 3 %>
+	<%= image_tag 'danbo2' %>
+	<% elsif @page.params_id == 4 %>
+	<%= image_tag 'blackman' %>
+<% end %>
+
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @page.text %> " data-url="https://chocolates-bomb.herokuapp.com" src="/assets/twitter_btn.png">Tweet</a>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</section>
+
+<%= link_to root_path do %>
+				<%= image_tag 'blackman.png' %>
+			<% end %>
