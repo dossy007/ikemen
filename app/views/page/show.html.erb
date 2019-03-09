@@ -1,0 +1,15 @@
+
+
+ここに画像を貼る
+<% if @pages.id == 2 %>
+    <%= image_tag 'danbo.png' %>
+	<% elsif @pages.id == 3 %>
+	<%= image_tag 'danbo2' %>
+	<% elsif @pages.id == 4 %>
+	<%= image_tag 'blackman' %>
+<% end %>
+
+<%= form_tag(page_path,method: :post) do %>
+	<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
+	<%= image_submit_tag 'danbo.png',class: 'send' %>
+<% end %>
