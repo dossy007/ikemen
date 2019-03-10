@@ -30,7 +30,6 @@ Rails.application.configure do
   config.assets.compile = true
   config.assets.initialize_on_precompile = false
 
-  config.assets.initialize = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
