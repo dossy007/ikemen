@@ -1,13 +1,16 @@
 
 
 ここに画像を貼る
-<% if @pages.id == 2 %>
-    <%= image_tag 'danbo.png' %>
-	<% elsif @pages.id == 3 %>
+<% case @pages.id%>
+	<% when 2 then %>
+	<%= image_tag 'danbo.png' %>
+	<% when 3 then %>
 	<%= image_tag 'danbo2' %>
-	<% elsif @pages.id == 4 %>
+	<% when 4 then %>
 	<%= image_tag 'blackman' %>
-<% end %>
+	<% when 5 then %>
+	<%= image_tag 'danbo2' %>
+<%end %>
 
 <%= form_tag(page_path,method: :post) do %>
 	<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
