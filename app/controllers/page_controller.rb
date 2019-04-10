@@ -7,7 +7,7 @@ class PageController < ApplicationController
 		@page = Page.create(:text => change_text,:params_id =>params[:id])
 		@pages = Page.find(params[:id])
 
-		render layout: "twitter"
+		# render layout: "twitter"
         # @page = Page.new(create_params)
         # @page.change_text
 	end
