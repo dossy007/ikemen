@@ -1,8 +1,6 @@
 class PageController < ApplicationController
-	# layout 'twitter',only: :create
 
 	def index
-		@pages = Page.find(1)
 	end
 
 	def create
@@ -15,23 +13,18 @@ class PageController < ApplicationController
 	end
 
 	def show
-		@pages = Page.find(params[:id])
 	end
 
 	def uno
-		@pages = Page.find(params[:id])
 	end
 
 	def due
-		@pages = Page.find(params[:id])
 	end
 
 	def tre
-		@pages = Page.find(params[:id])
 	end
 
 	def quattro
-		@pages = Page.find(params[:id])
 	end
 
 	def create_params #textを保存
