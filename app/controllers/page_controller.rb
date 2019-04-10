@@ -1,4 +1,5 @@
 class PageController < ApplicationController
+	layout 'twitter',only: :create
 
 	def index
 	end
